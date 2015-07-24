@@ -28,7 +28,7 @@ log["WARN"]="BYellow"
 log["DEBUG"]="BGreen"
 
 # keep original behaviour; hide lines that does not match any of the pattern
-: ${print_lines_not_matched:=0}
+: ${print_lines_not_matched:=1}
 
 # keeping the original behaviour; load config from the ctail script's directory
 CWD=`dirname $0`
