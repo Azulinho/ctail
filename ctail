@@ -96,4 +96,4 @@ awk_script()
     fi
 }
 
-$AWK -f <(awk_script) <($TAIL "$@")
+cat - | $AWK -f <(awk_script)
